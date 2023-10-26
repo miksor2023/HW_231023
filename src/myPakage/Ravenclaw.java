@@ -1,10 +1,10 @@
 package myPakage;
 
 public class Ravenclaw extends Hogwarts {
-    int intellect;
-    int wisdom;
-    int wittiness;
-    int creativity;
+    private int intellect;
+    private int wisdom;
+    private int wittiness;
+    private int creativity;
 
     public Ravenclaw(String name, int magicPower, int transgression, int intellect, int wisdom, int wittiness, int creativity) {
         super(name, magicPower, transgression);

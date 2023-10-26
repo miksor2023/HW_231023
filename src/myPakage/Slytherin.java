@@ -1,11 +1,11 @@
 package myPakage;
 
 public class Slytherin extends Hogwarts{
-    int slyness;
-    int resoluteness;
-    int resourcefulness;
-    int arrogance;
-    int imperiousness;
+    private int slyness;
+    private int resoluteness;
+    private int resourcefulness;
+    private int arrogance;
+    private int imperiousness;
 
     public Slytherin(String name, int magicPower, int transgression, int slyness, int resoluteness, int resourcefulness, int arrogance, int imperiousness) {
         super(name, magicPower, transgression);

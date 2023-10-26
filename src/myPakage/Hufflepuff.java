@@ -1,9 +1,9 @@
 package myPakage;
 
 public class Hufflepuff extends Hogwarts{
-    int diligence;
-    int loyalty;
-    int honesty;
+    private int diligence;
+    private int loyalty;
+    private int honesty;
 
     public Hufflepuff(String name, int magicPower, int transgression, int diligence, int loyalty, int honesty) {
         super(name, magicPower, transgression);
