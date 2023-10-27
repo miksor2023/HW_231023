@@ -1,12 +1,12 @@
 package myPakage;
 
-public class Ravenclaw extends Hogwarts {
+public class RavenclawStudent extends HogwartsStudent {
     private int intellect;
     private int wisdom;
     private int wittiness;
     private int creativity;
 
-    public Ravenclaw(String name, int magicPower, int transgression, int intellect, int wisdom, int wittiness, int creativity) {
+    public RavenclawStudent(String name, int magicPower, int transgression, int intellect, int wisdom, int wittiness, int creativity) {
         super(name, magicPower, transgression);
         this.intellect = intellect;
         this.wisdom = wisdom;
@@ -31,12 +31,15 @@ public class Ravenclaw extends Hogwarts {
     }
     @Override
     public String toString() {
-        return  ", intellect = " + intellect +
-                ", wisdom = " + wisdom +
-                ", wittiness = " + wittiness +
-                ", creativity = " + creativity;
+        return  "name: " + this.getName() +
+                ", magicPower: " + this.getMagicPower() +
+                ", transgression: " + this.getTransgression() +
+                ", intellect: " + intellect +
+                ", wisdom: " + wisdom +
+                ", wittiness: " + wittiness +
+                ", creativity: " + creativity;
     }
-    public void compareWith(Ravenclaw student) {
+    public void compareWith(RavenclawStudent student) {
         int sum1 = this.intellect + this.wisdom + this.wittiness + this.creativity;
         int sum2 = student.intellect + student.wisdom + student.wittiness + student.creativity;
         String bestScript = " лучший Когтевранец, чем ";

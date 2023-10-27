@@ -1,11 +1,11 @@
 package myPakage;
 
-public class Hufflepuff extends Hogwarts{
+public class HufflepuffStudent extends HogwartsStudent{
     private int diligence;
     private int loyalty;
     private int honesty;
 
-    public Hufflepuff(String name, int magicPower, int transgression, int diligence, int loyalty, int honesty) {
+    public HufflepuffStudent(String name, int magicPower, int transgression, int diligence, int loyalty, int honesty) {
         super(name, magicPower, transgression);
         this.diligence = diligence;
         this.loyalty = loyalty;
@@ -27,11 +27,14 @@ public class Hufflepuff extends Hogwarts{
 
     @Override
     public String toString() {
-        return  ", diligence = " + diligence +
-                ", loyalty = " + loyalty +
-                ", honesty = " + honesty;
+        return  "name: " + this.getName() +
+                ", magicPower: " + this.getMagicPower() +
+                ", transgression: " + this.getTransgression() +
+                ", diligence: " + diligence +
+                ", loyalty: " + loyalty +
+                ", honesty: " + honesty;
     }
-    public void compareWith(Hufflepuff student) {
+    public void compareWith(HufflepuffStudent student) {
         int sum1 = this.diligence + this.loyalty + this.honesty;
         int sum2 = student.diligence + student.loyalty + student.honesty;
         String bestScript = " лучший Пуффендуй, чем ";

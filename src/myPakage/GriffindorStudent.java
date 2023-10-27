@@ -1,11 +1,11 @@
 package myPakage;
 
-public class Griffindor extends Hogwarts{
+public class GriffindorStudent extends HogwartsStudent{
     private int nobility;
     private int honour;
     private int bravery;
 
-    public Griffindor(String name, int magicPower, int transgression, int nobility, int honour, int bravery) {
+    public GriffindorStudent(String name, int magicPower, int transgression, int nobility, int honour, int bravery) {
         super(name, magicPower, transgression);
         this.nobility = nobility;
         this.honour = honour;
@@ -26,12 +26,15 @@ public class Griffindor extends Hogwarts{
 
     @Override
     public String toString() {
-        return ", nobility = " + nobility +
-                ", honour = " + honour +
-                ", bravery = " + bravery;
+        return  "name: " + this.getName() +
+                ", magicPower: " + this.getMagicPower() +
+                ", transgression: " + this.getTransgression() +
+                ", nobility: " + nobility +
+                ", honour: " + honour +
+                ", bravery: " + bravery;
     }
 
-    public void compareWith(Griffindor student) {
+    public void compareWith(GriffindorStudent student) {
         int sum1 = this.getNobility() + this.getHonour() + this.getBravery();
         int sum2 = student.getNobility() + student.getHonour() + student.getBravery();
         String bestScript = " лучший Гриффиндорец, чем ";

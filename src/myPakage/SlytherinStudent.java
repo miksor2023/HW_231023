@@ -1,13 +1,13 @@
 package myPakage;
 
-public class Slytherin extends Hogwarts{
+public class SlytherinStudent extends HogwartsStudent{
     private int slyness;
     private int resoluteness;
     private int resourcefulness;
     private int arrogance;
     private int imperiousness;
 
-    public Slytherin(String name, int magicPower, int transgression, int slyness, int resoluteness, int resourcefulness, int arrogance, int imperiousness) {
+    public SlytherinStudent(String name, int magicPower, int transgression, int slyness, int resoluteness, int resourcefulness, int arrogance, int imperiousness) {
         super(name, magicPower, transgression);
         this.slyness = slyness;
         this.resoluteness = resoluteness;
@@ -38,13 +38,16 @@ public class Slytherin extends Hogwarts{
 
     @Override
     public String toString() {
-        return  ", slyness = " + slyness +
-                ", resoluteness = " + resoluteness +
-                ", resourcefulness = " + resourcefulness +
-                ", arrogance = " + arrogance +
-                ", imperiousness = " + imperiousness;
+        return  "name: " + this.getName() +
+                ", magicPower: " + this.getMagicPower() +
+                ", transgression: " + this.getTransgression() +
+                ", slyness: " + slyness +
+                ", resoluteness: " + resoluteness +
+                ", resourcefulness: " + resourcefulness +
+                ", arrogance: " + arrogance +
+                ", imperiousness: " + imperiousness;
     }
-    public void compareWith(Slytherin student) {
+    public void compareWith(SlytherinStudent student) {
         int sum1 = this.slyness + this.resoluteness + this.resourcefulness + this.arrogance + this.imperiousness;
         int sum2 = student.slyness + student.resoluteness + student.resourcefulness + student.arrogance + this.imperiousness;
         String bestScript = " лучший Слизеринец, чем ";
